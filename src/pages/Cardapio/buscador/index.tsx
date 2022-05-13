@@ -14,7 +14,8 @@ function Buscador({ busca, setBusca }: Props) {
             <input 
                 title="busca"
                 value={busca}
-                onChange={(evento) => setBusca(evento.target.value)} 
+                onChange={(evento) => setBusca(evento.target.value)}
+                placeholder="Buscar"
             />
             <CgSearch 
                 size={20}
