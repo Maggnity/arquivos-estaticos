@@ -12,8 +12,8 @@ interface Props {
 
 function Filtros({ filtro, setFiltro}: Props) {
     function selecionarFiltro(opcao: IOopcao) {
-        if(filtro === opcao.id) return setFiltro(null)
-        return setFiltro(opcao.id)
+        if(filtro === opcao.id) return setFiltro(null);
+        return setFiltro(opcao.id);
     }
     
     return (
@@ -23,7 +23,7 @@ function Filtros({ filtro, setFiltro}: Props) {
                     type='button'
                     className={classNames({
                         [styles.filtros__filtro]: true,
-                        [styles["filtros__filtro--ativo"]]: filtro === opcao.id
+                        [styles['filtros__filtro--ativo']]: filtro === opcao.id
                     })} 
                     key={opcao.id} 
                     onClick={() => selecionarFiltro(opcao)}
@@ -32,7 +32,7 @@ function Filtros({ filtro, setFiltro}: Props) {
                 </button>
             ))}
         </div>
-    )
+    );
 }
 
-export default Filtros
+export default Filtros;
